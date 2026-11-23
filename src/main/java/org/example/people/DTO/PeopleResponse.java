@@ -1,4 +1,8 @@
 package org.example.people.DTO;
 
-public class PeopleResponse {
+public record PeopleResponse (
+        Long id,
+        String name,
+        String email
+) {
 }
