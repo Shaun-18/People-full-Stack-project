@@ -33,8 +33,9 @@ public class PeopleService {
 
         People people = new People();
 
-        people.setEmail(request.email());
         people.setName(request.name());
+        people.setEmail(request.email());
+
 
         People savedPeople = peopleRepository.save(people);
 
